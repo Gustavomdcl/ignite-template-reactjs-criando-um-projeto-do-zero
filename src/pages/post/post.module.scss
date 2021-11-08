@@ -59,5 +59,50 @@
         margin-left: 1.5rem;
       }
     }
+    & + p {
+      margin-top: -4rem;
+      margin-bottom: 4rem;
+    }
   }
+  &>p {
+    margin: 0;
+      font-size: 0.875rem;
+      color: var(--gray-200);
+  }
+}
+
+.footer {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.previous, .next {
+  display: flex;
+  flex-direction: column;
+  span {
+    font-size: 1.125rem;
+    color: var(--white);
+    display: block;
+    margin: 0;
+    & + span {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--pink-100);
+    }
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.previous {
+  float: left;
+}
+
+.next {
+  float: right;
+  align-items: end;
 }
